@@ -1,0 +1,347 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T17:05:00.000Z" agent="Mozilla/5.0" version="24.7.17" editor="draw.io">
+  <diagram id="task5-info-infra-modes" name="Information Infrastructure and Modes">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2800" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="2" value="Задание 5 - схема информационной инфраструктуры, поддерживающей бизнес-процессы, и режимов их функционирования" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="1800" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="10" value="Режимы функционирования бизнес-процессов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="2750" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Оперативный режим&lt;br&gt;запись пациента, прием,&lt;br&gt;диагностика, лечение,&lt;br&gt;касса, работа лаборатории" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="95" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Плановый режим&lt;br&gt;резервное копирование,&lt;br&gt;отчетность, обновления,&lt;br&gt;плановые ИТ-работы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="95" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Деградированный режим&lt;br&gt;работа через DR Site,&lt;br&gt;частичное отключение&lt;br&gt;второстепенных сервисов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="660" y="95" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Аварийно-восстановительный режим&lt;br&gt;failover на DR,&lt;br&gt;восстановление из backup,&lt;br&gt;offsite и offline-контуров" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="95" width="300" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Связь режимов и процессов:&lt;br&gt;- оперативный режим является основным;&lt;br&gt;- плановый режим поддерживает устойчивость работы;&lt;br&gt;- деградированный режим обеспечивает непрерывность при частичных отказах;&lt;br&gt;- аварийно-восстановительный режим нужен при полной потере основной площадки." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="90" width="1420" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="20" value="Бизнес-процессы организации" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="250" width="430" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Запись пациента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="290" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Прием и оформление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Диагностика и план лечения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="410" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="Лечение" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="470" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="Передача заказа в лабораторию" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="530" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Изготовление изделия" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="595" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="Возврат изделия и завершение лечения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="655" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="Оплата и закрытие случая" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="725" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="Закупка материалов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="290" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="Кадровое оформление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="350" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="ИТ-поддержка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="410" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="Резервное копирование" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="470" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="Восстановление после инцидента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="530" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="Отчетность и администрирование" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="600" width="150" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="40" value="Пользовательские площадки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="480" y="250" width="650" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Клиника 1&lt;br&gt;АРМ врачей, администраторов,&lt;br&gt;касса, диагностика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="180" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Клиника 2&lt;br&gt;АРМ врачей, администраторов,&lt;br&gt;касса, диагностика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="720" y="300" width="180" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Зуботехническая лаборатория&lt;br&gt;АРМ техников, CAD/CAM,&lt;br&gt;склад и маркировка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="920" y="300" width="180" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Пользовательский доступ&lt;br&gt;через VPN / защищенные каналы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="660" y="440" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="Филиальные бизнес-процессы&lt;br&gt;запись, прием, диагностика,&lt;br&gt;лечение, касса, лабораторный цикл" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="580" y="540" width="420" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="50" value="Primary Site - основная информационная инфраструктура" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="250" width="760" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="Сетевой периметр&lt;br&gt;UserGate NGFW&lt;br&gt;каналы связи, VPN, фильтрация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="300" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="Системная платформа&lt;br&gt;Astra Linux Server&lt;br&gt;VMmanager / БРЕСТ&lt;br&gt;ALD Pro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="300" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="Клинические приложения&lt;br&gt;МИС стоматологии&lt;br&gt;кассовый контур&lt;br&gt;документы пациента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="300" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="Лабораторные и файловые сервисы&lt;br&gt;лабораторный обмен&lt;br&gt;файловое хранилище&lt;br&gt;архив изображений" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="450" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="Postgres Pro&lt;br&gt;кластер БД&lt;br&gt;основные бизнес-данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="450" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="Корпоративные сервисы&lt;br&gt;МойОфис Почта&lt;br&gt;Р7-Офис&lt;br&gt;Naumen Service Desk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="450" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="RuBackup&lt;br&gt;резервное копирование&lt;br&gt;каталог копий&lt;br&gt;replication на DR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="600" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="Monitoring / SIEM&lt;br&gt;Zabbix, KUMA&lt;br&gt;журналирование, контроль среды" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="600" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="Инженерный контур&lt;br&gt;питание, ИБП, охлаждение,&lt;br&gt;пожаротушение, СКУД" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="600" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="Primary Site поддерживает процессы:&lt;br&gt;- запись, прием, лечение;&lt;br&gt;- лабораторный обмен;&lt;br&gt;- кассу, документы, почту;&lt;br&gt;- доступы, поддержку, backup и мониторинг." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="760" width="690" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="70" value="DR Site - резервная информационная инфраструктура" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="250" width="820" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="Резервный сетевой периметр&lt;br&gt;UserGate NGFW&lt;br&gt;принимает VPN филиалов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="300" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="Резервная платформа&lt;br&gt;VMmanager / БРЕСТ&lt;br&gt;резервные ВМ и сервисы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2260" y="300" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="Резервная БД&lt;br&gt;Postgres Pro standby / HA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="300" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="Резервные прикладные сервисы&lt;br&gt;МИС, файлы, почта,&lt;br&gt;критичные интеграции" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="450" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="DR backup-контур&lt;br&gt;RuBackup restore&lt;br&gt;изолированные копии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2260" y="450" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="76" value="Резервная СХД&lt;br&gt;репликация с Primary Site" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="450" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="77" value="DR Site включается в деградированном или аварийно-восстановительном режиме&lt;br&gt;и поддерживает критичные процессы организации." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="760" width="740" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="80" value="Offsite и offline защита данных" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1180" width="1610" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="81" value="TATLIN.OBJECT / S3 в РФ&lt;br&gt;offsite immutable copy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="1230" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="82" value="Offline archive&lt;br&gt;ленты / съемные носители / сейф" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="1230" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="83" value="Контур используется для процессов:&lt;br&gt;- резервное копирование;&lt;br&gt;- долгосрочное хранение;&lt;br&gt;- восстановление после катастрофы." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="1230" width="810" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="100" value="Связь процессов, инфраструктуры и режимов&lt;br&gt;&lt;br&gt;1. Клиники и лаборатория используют основную информационную инфраструктуру в оперативном режиме.&lt;br&gt;2. Плановый режим поддерживается backup, мониторингом, отчетностью и регламентными работами.&lt;br&gt;3. При частичном отказе процессы продолжаются через DR Site в деградированном режиме.&lt;br&gt;4. При потере Primary Site используется аварийно-восстановительный режим с failover и восстановлением из backup." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1180" width="1090" height="260" as="geometry" />
+        </mxCell>
+
+        <mxCell id="200" value="основной пользовательский доступ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="41" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="42" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="43" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" value="VPN / защищенные каналы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="44" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="204" value="резервный доступ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#d79b00;" edge="1" parent="1" source="44" target="71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="210" value="доступ к приложениям" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="51" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="213" value="SQL / данные" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="53" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="54" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="53" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="216" value="backup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="53" target="57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="54" target="57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="56" target="57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="219" value="логирование / контроль" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="51" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="59" target="58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="230" value="резервный контур" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="71" target="72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="74" target="75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="74" target="76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="240" value="репликация БД" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#b85450;" edge="1" parent="1" source="55" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="241" value="репликация сервисов и файлов" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#b85450;" edge="1" parent="1" source="54" target="74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="242" value="backup replication" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="57" target="75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="243" value="резервная СХД" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#b85450;" edge="1" parent="1" source="54" target="76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="244" value="offsite copy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="57" target="81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="245" value="offline export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="75" target="82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="250" value="использует" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="21" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="22" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="23" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="24" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="254" value="лабораторный цикл" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="25" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="26" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="27" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="257" value="касса" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="28" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="258" value="поддерживает" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="29" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="259" value="управляет доступом" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="30" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="260" value="service desk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="31" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="261" value="backup-процесс" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="32" target="57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="262" value="DR / restore" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="33" target="75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="263" value="отчеты / администрирование" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="34" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="270" value="оперативный режим" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="271" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="272" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="273" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="277" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="11" target="28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="278" value="плановый режим" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="12" target="29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="12" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="12" target="32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="281" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="12" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="282" value="деградированный режим" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#d6b656;" edge="1" parent="1" source="13" target="77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="283" value="аварийно-восстановительный режим" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;" edge="1" parent="1" source="14" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
