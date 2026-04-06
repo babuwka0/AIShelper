@@ -1,0 +1,324 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T16:10:00.000Z" agent="Mozilla/5.0" version="24.7.17" editor="draw.io">
+  <diagram id="task5-optimized-200-users" name="Task5 Optimized 200 Users">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2600" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="2" value="Задание 5 - оптимизированная схема инфраструктуры для компании до 200 сотрудников" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="1350" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="10" value="Провайдеры связи и резервирование WAN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="2520" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Ростелеком Бизнес&lt;br&gt;Основной WAN A&lt;br&gt;ВОЛС с SLA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="95" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="МТС Бизнес / ЭР-Телеком&lt;br&gt;Резервный WAN B&lt;br&gt;независимый оператор" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="95" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="LTE / 5G fallback&lt;br&gt;аварийный канал&lt;br&gt;для администрирования и критичных сервисов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="560" y="95" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Требования:&lt;br&gt;- разные точки ввода&lt;br&gt;- разные трассы&lt;br&gt;- разные городские узлы&lt;br&gt;- минимум общих магистралей" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="880" y="85" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="DR Site также использует&lt;br&gt;собственных независимых операторов&lt;br&gt;и dual WAN на UserGate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="85" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Логика: основной канал -&gt; резервный канал -&gt; LTE fallback.&lt;br&gt;VPN филиалов поднимаются к Primary Site и резервно к DR Site." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="95" width="840" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="20" value="Клиника 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="250" width="380" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Aquarius Pro P30 K50&lt;br&gt;АРМ ресепшена / врача&lt;br&gt;ОС: Astra Linux Desktop / РЕД ОС" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="295" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Aquarius workstation&lt;br&gt;Диагностика&lt;br&gt;32-64 GB RAM, NVMe SSD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="375" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="АТОЛ Optima / Катюша / UPS&lt;br&gt;Касса, МФУ, ИБП 2-3 кВА" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="445" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="Eltex MES2324P&lt;br&gt;24 x 1G PoE+, 4 x 10G SFP+" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="335" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="Eltex WEP-30L&lt;br&gt;Wi-Fi 6, WPA3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="425" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="UserGate D200&lt;br&gt;филиальный VPN-шлюз" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="330" y="335" width="50" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="30" value="Клиника 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="500" width="380" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="Aquarius Pro P30 K50&lt;br&gt;АРМ ресепшена / врача&lt;br&gt;ОС: Astra Linux Desktop / РЕД ОС" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="545" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="Aquarius workstation&lt;br&gt;Диагностика&lt;br&gt;32-64 GB RAM, NVMe SSD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="625" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="АТОЛ Optima / Катюша / UPS&lt;br&gt;Касса, МФУ, ИБП 2-3 кВА" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="695" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="Eltex MES2324P&lt;br&gt;24 x 1G PoE+, 4 x 10G SFP+" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="585" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="Eltex WEP-30L&lt;br&gt;Wi-Fi 6, WPA3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="675" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="UserGate D200&lt;br&gt;филиальный VPN-шлюз" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="330" y="585" width="50" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="40" value="Зуботехническая лаборатория" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="750" width="380" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Aquarius Pro P30 K50&lt;br&gt;АРМ техников&lt;br&gt;ОС: Astra Linux Desktop / РЕД ОС" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="795" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Aquarius workstation&lt;br&gt;CAD/CAM станция&lt;br&gt;64 GB RAM, NVMe SSD, pro GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="875" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="TSC TE200 / UPS&lt;br&gt;маркировка, склад, ИБП 2-3 кВА" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="945" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Eltex MES2324P&lt;br&gt;PoE, VLAN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="835" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="Eltex WEP-30L&lt;br&gt;служебный Wi-Fi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="925" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="UserGate D200&lt;br&gt;VPN-шлюз лаборатории" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="330" y="835" width="50" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="50" value="Primary Site - оптимизированный HQ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="250" width="900" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="2 x UserGate D200&lt;br&gt;dual WAN / VPN / failover&lt;br&gt;достаточно для HQ до 200 сотрудников" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="290" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="Eltex MES3324F&lt;br&gt;ядро / агрегация&lt;br&gt;L3, 4 x 10G SFP+" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="405" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="Сервисы приложений&lt;br&gt;стоматологическая МИС,&lt;br&gt;ALD Pro, МойОфис Почта,&lt;br&gt;Naumen Service Desk&lt;br&gt;ОС: Astra Linux Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="990" y="290" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="3 x Aquarius AQserv T50 D212RS&lt;br&gt;Кластер виртуализации&lt;br&gt;192-256 GB RAM на узел&lt;br&gt;ОС: Astra Linux Server + VMmanager / БРЕСТ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="690" y="405" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="2 x Aquarius AQserv T50 D212RS&lt;br&gt;Кластер БД&lt;br&gt;128-192 GB RAM, SSD RAID10&lt;br&gt;ОС: Astra Linux Server + Postgres Pro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="990" y="415" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="YADRO TATLIN.FLEX.TWIN&lt;br&gt;компактная двухконтроллерная СХД&lt;br&gt;SSD + Hybrid / file + VM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="540" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="Aquarius AQserv T50 D212RS&lt;br&gt;RuBackup server&lt;br&gt;локальный backup + replication&lt;br&gt;ОС: Astra Linux Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="740" y="540" width="250" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="Backup storage&lt;br&gt;дисковый пул или компактная backup-полка&lt;br&gt;без тяжелой enterprise СХД" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="540" width="270" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="Zabbix + admin&lt;br&gt;мониторинг и управление&lt;br&gt;ОС: Astra Linux Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="650" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="Инженерия серверной&lt;br&gt;ИБП, охлаждение N+1,&lt;br&gt;газовое пожаротушение,&lt;br&gt;СКУД и датчики среды" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="650" width="530" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="70" value="DR Site - оптимизированный резерв" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="250" width="880" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="2 x UserGate D200&lt;br&gt;резервный dual WAN / VPN&lt;br&gt;принимает филиалы при failover" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="290" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="Eltex MES3324F&lt;br&gt;ядро резервной площадки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="405" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="Активируемые сервисы&lt;br&gt;ALD Pro, Postgres Pro,&lt;br&gt;стоматологическая МИС,&lt;br&gt;файлы, касса, почта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1940" y="290" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="2 x Aquarius AQserv T50 D212RS&lt;br&gt;Резервный VM-кластер&lt;br&gt;под критичные ВМ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="405" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="2 x Aquarius AQserv T50 D212RS&lt;br&gt;Резервный DB-кластер&lt;br&gt;standby / HA Postgres Pro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="405" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="76" value="YADRO TATLIN.FLEX.TWIN&lt;br&gt;резервная СХД&lt;br&gt;репликация с Primary Site" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="540" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="77" value="Aquarius AQserv T50 D212RS&lt;br&gt;RuBackup DR server&lt;br&gt;restore и прием реплик" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="540" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="78" value="Backup storage DR&lt;br&gt;компактный дисковый контур&lt;br&gt;под критичные backup-копии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="540" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="79" value="Failover-порядок:&lt;br&gt;1) ALD Pro&lt;br&gt;2) DB&lt;br&gt;3) МИС&lt;br&gt;4) файлы и касса&lt;br&gt;5) почта и вторичные сервисы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="650" width="720" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="90" value="Offsite / immutable / offline backup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="930" y="790" width="660" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="91" value="YADRO TATLIN.OBJECT&lt;br&gt;S3 offsite / immutable copy&lt;br&gt;в РФ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="970" y="835" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="92" value="Offline archive&lt;br&gt;ленты / съемные носители / сейф&lt;br&gt;последний рубеж восстановления" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="835" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="93" value="Назначение:&lt;br&gt;- защита от шифровальщиков&lt;br&gt;- восстановление после полной потери площадки&lt;br&gt;- архивное хранение" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacingLeft=8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="970" y="930" width="580" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="100" value="Логика оптимизированного варианта&lt;br&gt;&lt;br&gt;1. Архитектура остается правильной: Primary Site + DR Site + offsite/offline backup.&lt;br&gt;2. Серверный контур уменьшен до 3 узлов виртуализации на Primary и 2 узлов на DR.&lt;br&gt;3. Используется специализированная стоматологическая МИС вместо тяжелого ERP-подхода.&lt;br&gt;4. WAN остается резервированным: основной, резервный и LTE fallback.&lt;br&gt;5. DR Site рассчитан на критичные сервисы, а не на полное enterprise-зеркало." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1000" width="860" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="101" value="Репликация и защита данных&lt;br&gt;&lt;br&gt;- Репликация БД: Primary Postgres Pro -&gt; DR Postgres Pro&lt;br&gt;- Репликация СХД: TATLIN.FLEX.TWIN -&gt; DR TATLIN.FLEX.TWIN&lt;br&gt;- Репликация backup: RuBackup -&gt; DR backup server&lt;br&gt;- Offsite copy: RuBackup -&gt; TATLIN.OBJECT&lt;br&gt;- Offline export: DR backup -&gt; offline archive" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="790" width="620" height="220" as="geometry" />
+        </mxCell>
+
+        <mxCell id="200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="21" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="22" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="23" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="25" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="204" value="LAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="24" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="31" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="32" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="33" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="35" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="209" value="LAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="34" target="36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="210" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="41" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="42" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="43" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="45" target="44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="214" value="LAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="44" target="46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="220" value="WAN A" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="11" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="221" value="WAN B" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="12" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="222" value="LTE fallback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#d6b656;" edge="1" parent="1" source="13" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="223" value="DR WAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;" edge="1" parent="1" source="15" target="71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="230" value="Основной VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="26" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="231" value="Резервный VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#d79b00;" edge="1" parent="1" source="26" target="71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="232" value="Основной VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="36" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="233" value="Резервный VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#d79b00;" edge="1" parent="1" source="36" target="71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="234" value="Основной VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#4a86e8;" edge="1" parent="1" source="46" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="235" value="Резервный VPN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#d79b00;" edge="1" parent="1" source="46" target="71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="240" value="Внутренний контур" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="51" target="52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="243" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="246" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="250" value="Внутренний контур DR" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="71" target="72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="72" target="77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="260" value="Репликация БД" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#b85450;" edge="1" parent="1" source="55" target="75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="261" value="Репликация СХД" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#b85450;" edge="1" parent="1" source="56" target="76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="262" value="Backup replication" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="57" target="77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="263" value="Offsite copy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="57" target="91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="264" value="Offline export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="77" target="92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
