@@ -1,0 +1,222 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T18:00:00.000Z" agent="Mozilla/5.0" version="24.7.17" editor="draw.io">
+  <diagram id="task6-backup-recovery" name="Task6 Backup and Recovery">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2600" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="2" value="Задание 6 - схема резервного копирования и план восстановления ИТ-инфраструктуры сети «Зубич»" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="1700" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="10" value="Схема резервного копирования информации" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="2520" height="640" as="geometry" />
+        </mxCell>
+
+        <mxCell id="11" value="Источники данных" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="920" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="База данных Postgres Pro&lt;br&gt;МИС, расписание, лечение&lt;br&gt;Инкремент: каждый час&lt;br&gt;Полная копия: ежедневно" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="150" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Виртуальные машины&lt;br&gt;Astra Linux Server&lt;br&gt;МИС, ALD Pro, почта,&lt;br&gt;Naumen Service Desk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="360" y="150" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Файловые данные&lt;br&gt;лаборатория, снимки,&lt;br&gt;документы, архивы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="150" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Конфигурации сети&lt;br&gt;UserGate, Eltex&lt;br&gt;backup при каждом изменении" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="390" y="270" width="240" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="20" value="Система управления backup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="90" width="500" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Сервер RuBackup&lt;br&gt;каталог копий&lt;br&gt;политики хранения&lt;br&gt;проверка восстановления" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="165" width="230" height="95" as="geometry" />
+        </mxCell>
+
+        <mxCell id="30" value="Хранилища резервных копий" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="90" width="960" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="Локальный backup storage&lt;br&gt;быстрое восстановление&lt;br&gt;основной поток (LAN)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="160" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="DR Site backup / restore&lt;br&gt;реплика backup&lt;br&gt;восстановление после потери площадки" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="160" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="TATLIN.OBJECT / S3 в РФ&lt;br&gt;offsite immutable copy&lt;br&gt;защита от шифровальщиков" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="160" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="Offline archive&lt;br&gt;ленты / съемные носители / сейф&lt;br&gt;ежемесячный export критичных архивов" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="360" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="Логика хранения:&lt;br&gt;1. локальный backup - быстрое восстановление;&lt;br&gt;2. DR backup - защита от потери основной площадки;&lt;br&gt;3. offsite immutable - защита от шифровальщика;&lt;br&gt;4. offline archive - последний рубеж восстановления." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="500" width="840" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="40" value="Периодичность" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="360" width="1460" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="БД Postgres Pro&lt;br&gt;часовые инкременты&lt;br&gt;ежедневные полные копии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="90" y="415" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Виртуальные машины&lt;br&gt;ежедневный backup&lt;br&gt;снапшоты по политике" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="350" y="415" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Файловое хранилище&lt;br&gt;ежедневный инкремент&lt;br&gt;offsite копия по расписанию" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="600" y="415" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Почта и документы&lt;br&gt;ежедневный backup&lt;br&gt;30 дней хранения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="870" y="415" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="Сетевые конфигурации&lt;br&gt;backup при изменении&lt;br&gt;хранение всех версий" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="415" width="220" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="100" value="План восстановления ИТ-инфраструктуры после сбоев" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="730" width="2520" height="840" as="geometry" />
+        </mxCell>
+
+        <mxCell id="101" value="Шаг 1. Обнаружение" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="780" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="102" value="Zabbix / пользователь / ИТ&lt;br&gt;фиксируют инцидент" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="855" width="250" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="103" value="Шаг 2. Классификация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="780" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="104" value="Локальный сбой / отказ сервиса / катастрофический инцидент" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="370" y="855" width="280" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="105" value="Шаг 3. Локализация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="780" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="106" value="Изоляция узла / VLAN / канала&lt;br&gt;ограничение зоны инцидента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="855" width="280" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="107" value="Шаг 4. Решение" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="800" width="220" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="110" value="Локальное восстановление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="760" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="Перезапуск сервиса / standby БД / запуск ВМ на оставшихся узлах / переключение на резервного провайдера" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="835" width="300" height="110" as="geometry" />
+        </mxCell>
+
+        <mxCell id="120" value="Failover на DR Site" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="760" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="Поднимаются по приоритету:&lt;br&gt;1) ALD Pro&lt;br&gt;2) Postgres Pro&lt;br&gt;3) МИС&lt;br&gt;4) файлы и лабораторный обмен&lt;br&gt;5) касса&lt;br&gt;6) почта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="835" width="300" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="130" value="Восстановление из backup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="760" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="Источники восстановления:&lt;br&gt;- локальный backup;&lt;br&gt;- DR backup;&lt;br&gt;- offsite immutable copy;&lt;br&gt;- offline archive (если необходимо)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="835" width="370" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="140" value="Шаг 5. Проверка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1020" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="141" value="Проверка доступности:&lt;br&gt;МИС, БД, файлов, лаборатории,&lt;br&gt;кассы, доступов, почты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1095" width="280" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="142" value="Шаг 6. Возврат в штатный режим" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="1020" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="143" value="После устранения причины:&lt;br&gt;восстановление основной площадки,&lt;br&gt;обратная синхронизация и разбор инцидента" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="1095" width="330" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="150" value="Типовые сценарии" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1220" width="2360" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="151" value="Сценарий А&lt;br&gt;Отказ узла виртуализации&lt;br&gt;ВМ запускаются на оставшихся узлах" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1280" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="152" value="Сценарий Б&lt;br&gt;Отказ БД или логическая порча&lt;br&gt;переключение на standby или restore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1280" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="153" value="Сценарий В&lt;br&gt;Вирус-шифровальщик&lt;br&gt;изоляция сегмента и restore из immutable/offline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1280" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="154" value="Сценарий Г&lt;br&gt;Отказ интернет-канала&lt;br&gt;переключение на резервного провайдера или LTE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1280" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="155" value="Сценарий Д&lt;br&gt;Полная потеря Primary Site&lt;br&gt;failover на DR Site + backup restore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1280" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="156" value="Тестирование плана&lt;br&gt;ежеквартальный restore файла и БД&lt;br&gt;учебный failover на DR дважды в год" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1280" width="320" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="200" value="1. Hourly increment / daily full" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="12" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="201" value="2. VM backup / snapshots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="13" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" value="3. Incremental file export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="14" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" value="4. Config backup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="15" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="210" value="Основной поток (LAN)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#d79b00;" edge="1" parent="1" source="21" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="211" value="Реплика backup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#d79b00;" edge="1" parent="1" source="21" target="32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="212" value="Offsite copy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#9673a6;" edge="1" parent="1" source="21" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="213" value="Ежемесячный offline export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" edge="1" parent="1" source="32" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="102" target="104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="104" target="106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="106" target="107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="223" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="107" target="110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="224" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#d79b00;" edge="1" parent="1" source="107" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="111" target="140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#d79b00;" edge="1" parent="1" source="121" target="130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b85450;" edge="1" parent="1" source="131" target="140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="141" target="142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#82b366;" edge="1" parent="1" source="143" target="156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
